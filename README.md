@@ -1,5 +1,3 @@
-﻿# shoes-factory
-
  # Shoes Factory Management System
 
 **Project Version:** 1.0.0
@@ -107,4 +105,4 @@ License
 This project is licensed under the MIT License.
 
 Contact
-For any questions or suggestions, please contact in Telegram: @RaysRU
+For any questions or suggestions, please contact: [@RaysRU](https://t.me/RaysRU/) Telergam
