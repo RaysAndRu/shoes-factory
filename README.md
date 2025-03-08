@@ -97,7 +97,7 @@ npm run preview
 Deploy the generated build on a static server or integrate it with your backend application.
 
 Additional Materials
-Architecture Diagram: The draw.io file in the repository contains the project's architecture diagram. You can open it using draw.io.
+Architecture Diagram: The ERD.io file in the repository contains the project's architecture diagram. You can open it using draw.io.
 Contributing
 If you would like to contribute, please fork the repository and create a pull request with your improvements or fixes.
 
