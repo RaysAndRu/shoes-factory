@@ -1,0 +1,6 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #EDE7F6, #D1C4E9);
+    color: #4527A0;
+    font-family: 'Roboto', sans-serif;
+}

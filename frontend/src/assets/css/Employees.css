@@ -1,0 +1,101 @@
+.page-elements {
+	padding: 30px;
+}
+
+.elements-search {
+	margin-bottom: 15px;
+}
+
+
+.summary {
+    margin-top: 20px; /* Отступ сверху для отделения от таблицы */
+    padding: 10px; /* Небольшой отступ вокруг контента для лучшей читаемости */
+    background-color: #f9f9f9; /* Светлое фоновое цвет для выделения блока */
+    border-radius: 5px; /* Едва заметные скругленные углы */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Тень для создания эффекта глубины */
+}
+
+.summary p,
+.summary ul {
+    margin: 0; /* Удаление стандартных отступов для текста и списков */
+    padding: 0; /* Удаление стандартных отступов для текста и списков */
+}
+
+.summary ul {
+    list-style-type: none; /* Удаление маркеров списка */
+    padding-left: 0; /* Удаление левого отступа списка */
+}
+
+.summary li {
+    display: inline-block; /* Показывать элементы списка рядом друг с другом */
+    margin-right: 10px; /* Добавление небольшого правого отступа между элементами списка */
+    padding: 5px; /* Небольшие отступы вокруг каждого элемента списка для удобства чтения */
+    background-color: #e6e6e6; /* Темный фон для каждого элемента списка */
+    border-radius: 3px; /* Скругленные углы для каждого элемента списка */
+    color: #333; /* Темно-серый цвет текста для контраста */
+}
+
+.summary p {
+    font-size: 14px; /* Уменьшенный размер шрифта для текстового описания */
+    line-height: 1.5; /* Улучшенная межстрочная высота для лучшей читаемости */
+    color: #666; /* Средне-серый цвет текста для контраста */
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 12px 15px;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table thead tr {
+    position: relative;
+}
+
+.table thead tr::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 60%;
+    background-color: #ddd;
+}
+
+.table th:first-child,
+.table td:first-child {
+    padding-left: 25px;
+}
+
+.table th:last-child,
+.table td:last-child {
+    padding-right: 25px;
+}
+
+.table.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table.actions button {
+    margin-left: 5px;
+}

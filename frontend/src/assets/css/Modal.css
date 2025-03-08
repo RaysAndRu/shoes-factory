@@ -1,0 +1,159 @@
+/* Modal.css */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    max-width: 90%;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .close:hover {
+    color: #333;
+  }
+  
+  /* Новые стили для группы label и input */
+  .modal-input-group {
+    margin-bottom: 15px;
+  }
+  
+  .modal-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  .modal-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Важно для правильного расчета ширины */
+  }
+  
+  /* Добавим стили для select (если нужно) */
+  .modal-input select {
+    width: 100%; /* Занимает всю ширину контейнера */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    appearance: none; /* Убирает стандартные стили выпадающего списка в некоторых браузерах */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Добавляет иконку стрелки вниз */
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 16px;
+  }
+  
+  .required-asterisk {
+    color: red;
+    margin-left: 3px; /* Optional: Add some spacing */
+  }
+  
+  
+  .modal-buttons {
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: -15px;
+  }
+  
+  .modal-button:hover {
+    background-color: #009688;
+  }
+  
+
+  .error-border {
+    border: 1px solid red !important;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
+
+  .modal-content {
+    max-width: 90vw; /* Ограничиваем максимальную ширину */
+    max-height: 90vh; /* Чтобы окно не выходило за границы */
+    overflow-x: auto; /* Горизонтальный скролл */
+    overflow-y: auto; /* Вертикальный скролл */
+  }
+  
+
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Кнопка подтверждения (создание или обновление материала) */
+.modal-confirm {
+    background-color: #4527A0; /* Фиолетовый */
+    color: #fff;
+}
+
+.modal-confirm:hover {
+    background-color: #673ab7; /* Светлее при наведении */
+}
+
+/* Кнопка отмены */
+.modal-cancel {
+    background-color: #E53935; /* Красный */
+    color: white;
+}
+
+.modal-cancel:hover {
+    background-color: #C62828; /* Темнее при наведении */
+}

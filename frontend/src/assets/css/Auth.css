@@ -1,0 +1,158 @@
+/* Общие стили */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #EDE7F6, #D1C4E9);
+  color: #4527A0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер для всей страницы */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Основной контент */
+.auth-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Информационный блок */
+.auth-info {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 30px;
+}
+
+.auth-info h2 {
+  font-size: 2rem;
+  color: #4527A0;
+  margin-bottom: 15px;
+}
+
+.auth-info p {
+  font-size: 1.1rem;
+  color: #7E57C2;
+  margin-bottom: 20px;
+}
+
+.auth-rules h3 {
+  font-size: 1.5rem;
+  color: #4527A0;
+  margin-bottom: 10px;
+}
+
+.auth-rules ul {
+  list-style: none;
+  padding: 0;
+  color: #7E57C2;
+}
+
+.auth-rules li {
+  margin-bottom: 8px;
+}
+
+/* Блок с формами */
+.auth-forms {
+  flex: 1;
+}
+
+/* Стили для формы */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  margin-top: 39px;
+}
+
+.login-form h2 {
+  font-size: 2rem;
+  color: #4527A0;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 1rem;
+  color: #4527A0;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #D1C4E9;
+  font-size: 1rem;
+  color: #4527A0;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #7E57C2;
+  box-shadow: 0 0 5px rgba(126, 87, 194, 0.5);
+}
+
+.submit-btn {
+  background-color: #7E57C2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #4527A0;
+}
+
+p {
+  font-size: 1rem;
+  color: #7E57C2;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .auth-content {
+    flex-direction: column;
+  }
+
+  .auth-info {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* Стили для сообщения об ошибке */
+.error-message {
+  color: #ff3b30; /* Красный цвет для ошибки */
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}

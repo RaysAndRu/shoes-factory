@@ -1,0 +1,90 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Более современный шрифт */
+  background: linear-gradient(135deg, #E0F2F1, #B2DFDB); /* Мягкий градиент */
+  color: #333; /* Темный цвет текста для лучшей читаемости */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Чтобы градиент занимал всю высоту экрана */
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Центрирование по вертикали */
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #80CBC4; /* Более мягкий сине-зеленый цвет */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.2s linear infinite; /* Ускорение анимации */
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.categories-page {
+  max-width: 900px; /* Увеличил максимальную ширину */
+  margin: 30px auto; /* Увеличил верхний отступ и центрирование */
+  padding: 30px; /* Увеличил внутренний отступ */
+  background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Более выраженная тень */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавная анимация при наведении */
+
+  &:hover {
+    transform: translateY(-3px); /* Небольшой подъем при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Усиление тени при наведении */
+  }
+}
+
+.category-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-item {
+  background-color: #FFFFFF; /* Чистый белый цвет */
+  border-radius: 8px;
+  margin-bottom: 25px; /* Увеличил отступ */
+  padding: 20px; /* Увеличил внутренний отступ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Более выраженная тень */
+  border: 1px solid #ECEFF1; /* Добавил тонкую рамку */
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02); /* Небольшое увеличение при наведении */
+  }
+}
+
+.edit-button {
+  background-color: #26A69A; /* Приятный мятный цвет */
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Увеличение размера */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px; /* Небольшое увеличение шрифта */
+  font-weight: 500; /* Средняя толщина шрифта */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Плавная анимация */
+
+  &:hover {
+    background-color: #009688; /* Более темный оттенок мятного */
+    transform: scale(1.05); /* Небольшое увеличение при наведении */
+  }
+
+  &:active {
+    transform: scale(0.95); /* Небольшое сжатие при клике */
+  }
+}
+
+.category-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px; /* Увеличил отступ */
+}

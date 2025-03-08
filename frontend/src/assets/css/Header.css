@@ -1,0 +1,50 @@
+.header {
+    background-color: #f8f9fa; /* Светло-серый фон для контраста */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень под хедером */
+    z-index: 100; /* Убедитесь, что хедер находится над остальным контентом */
+}
+
+.logo img,
+.header-title {
+    width: 150px; /* Задайте желаемые размеры */
+    height: auto; /* Сохранение пропорций изображения */
+}
+
+.header-title {
+    font-size: 24px; /* Размер текста названия */
+    font-weight: bold; /* Жирный шрифт для выделения */
+    color: #343a40; /* Темно-серый цвет текста */
+}
+
+
+.nav-links {
+    list-style-type: none; /* Убираем маркеры списка */
+    display: flex; /* Используем flexbox для расположения ссылок */
+    justify-content: space-between; /* Распределяем ссылки равномерно по ширине */
+    padding: 0; /* Убираем стандартные отступы списка */
+}
+
+.nav-link {
+    color: #212529; /* Средний серый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Цвет ссылки при наведении */
+}
+
+
+.login-btn {
+    background-color: #007bff; /* Синий фон кнопки */
+    color: white; /* Белый текст */
+    border: none; /* Убираем границу кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Скругленные углы кнопки */
+    cursor: pointer; /* Изменяем курсор на указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход фона при наведении */
+}
+
+.login-btn:hover {
+    background-color: #0056b3; /* Темнее синий фон при наведении */
+}
