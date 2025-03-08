@@ -75,7 +75,7 @@ npm run dev
 The application will be available at: http://localhost:3000 (or the port specified by Vite)
 
 ### 5. Production Build
-Backend:
+## Backend:
 Package the application:
 
 ```bash
@@ -83,7 +83,7 @@ mvn clean package
 ```
 Deploy the resulting jar file on your server.
 
-Frontend:
+## Frontend:
 Create an optimized production build:
 
 ```bash
@@ -94,15 +94,15 @@ To preview the production build locally:
 ```bash
 npm run preview
 ```
-Deploy the generated build on a static server or integrate it with your backend application.
+## Deploy the generated build on a static server or integrate it with your backend application.
 
-Additional Materials
-Architecture Diagram: The ERD.io file in the repository contains the project's architecture diagram. You can open it using draw.io.
-Contributing
+### Additional Materials
+## Architecture Diagram: The ERD.io file in the repository contains the project's architecture diagram. You can open it using draw.io.
+## Contributing
 If you would like to contribute, please fork the repository and create a pull request with your improvements or fixes.
 
-License
+## License
 This project is licensed under the MIT License.
 
-Contact
+## Contact
 For any questions or suggestions, please contact: [@RaysRU](https://t.me/RaysRU/) Telergam
